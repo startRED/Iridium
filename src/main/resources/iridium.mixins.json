@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.iridium.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "plugin": "com.iridium.compatibility.MixinCompatibilityPlugin",
+  "mixins": [
+    "server.tick.ExplosionCacheMixin",
+    "server.tick.FireSpreadThrottleMixin",
+    "server.tick.HopperThrottleMixin",
+    "server.tick.ItemEntityMergeThrottleMixin",
+    "server.tick.ProjectileTickThrottleMixin",
+    "server.tick.RandomTickThrottleMixin",
+    "server.tick.VillagerAIThrottleMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

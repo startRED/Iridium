@@ -1,0 +1,36 @@
+# Gradle
+.gradle/
+build/
+out/
+classes/
+
+# Loom / Fabric
+run/
+runs/
+remappedSrc/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# VSCode
+.vscode/
+
+# Editor / tooling local settings
+.claude/
+
+# Internal docs and drafts (not published)
+docs/
+_future/
+
+# OS
+.DS_Store
+Thumbs.db

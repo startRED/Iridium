@@ -1,0 +1,22 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.iridium.mixins.client",
+  "compatibilityLevel": "JAVA_21",
+  "plugin": "com.iridium.compatibility.MixinCompatibilityPlugin",
+  "client": [
+    "particles.FireworkParticleCapMixin",
+    "particles.ParticleCullingMixin",
+    "particles.ParticleManagerMixin",
+    "rendering.AnimationCullingMixin",
+    "rendering.BeaconBeamCullingMixin",
+    "rendering.BlockEntityCullingMixin",
+    "rendering.EntityCullingMixin",
+    "rendering.HeldItemCullingMixin",
+    "rendering.MapRendererMixin",
+    "rendering.NametagCacheMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "iridium.config.title": "Configuração do Iridium",
+  "iridium.config.slider": "%s: %s",
+
+  "iridium.config.entityCulling": "Culling de Entidades",
+  "iridium.config.blockEntityCulling": "Culling de Block Entities",
+  "iridium.config.animationCulling": "Culling de Animações",
+  "iridium.config.nametagCache": "Cache de Nametags",
+  "iridium.config.beaconBeamCulling": "Culling do Feixe de Beacon",
+  "iridium.config.heldItemCulling": "Culling de Itens na Mão",
+  "iridium.config.mapTextureCache": "Cache de Textura de Mapa",
+
+  "iridium.config.particleCulling": "Culling de Partículas",
+  "iridium.config.particleManagerCap": "Limite Global de Partículas",
+  "iridium.config.particleMax": "Partículas Máximas",
+  "iridium.config.fireworkParticleCap": "Limite de Partículas de Fogos",
+  "iridium.config.fireworkParticleMax": "Partículas Máximas (Fogos)",
+
+  "iridium.config.dynamicFps": "FPS Dinâmico",
+  "iridium.config.dynamicFpsUnfocusedFps": "FPS sem Foco",
+  "iridium.config.dynamicFpsMinimizedFps": "FPS Minimizado",
+
+  "iridium.config.hopperThrottle": "Throttle de Hoppers",
+  "iridium.config.hopperIdleCooldownTicks": "Cooldown de Hopper Ocioso (ticks)",
+  "iridium.config.explosionCache": "Cache de Raios de Explosão",
+
+  "iridium.config.randomTickThrottle": "Throttle de Random Tick",
+  "iridium.config.randomTickActiveRadius": "Raio Ativo de Random Tick",
+
+  "iridium.config.itemEntityMergeThrottle": "Throttle de Merge de Itens",
+  "iridium.config.itemEntityMergeInterval": "Intervalo de Merge (ticks)",
+
+  "iridium.config.villagerAiThrottle": "Throttle de IA de Villagers",
+  "iridium.config.villagerAiActiveRadius": "Raio Ativo de IA de Villagers",
+
+  "iridium.config.fireSpreadThrottle": "Throttle de Propagação de Fogo",
+  "iridium.config.fireSpreadActiveRadius": "Raio Ativo de Propagação de Fogo",
+
+  "iridium.config.projectileTickThrottle": "Throttle de Projéteis",
+  "iridium.config.projectileFarTickDistance": "Distância de Throttle de Projéteis",
+
+  "iridium.overlay.title": "Stats do Iridium",
+  "iridium.overlay.mspt": "MSPT: %s",
+  "iridium.overlay.tps": "TPS: %s",
+  "iridium.overlay.entitiesCulled": "Entidades culadas: %s",
+  "iridium.overlay.blockEntitiesCulled": "Block entities culadas: %s",
+  "iridium.overlay.animationsSkipped": "Animações puladas: %s",
+  "iridium.overlay.particlesSkipped": "Partículas puladas: %s",
+  "iridium.overlay.hoppersThrottled": "Hoppers em throttle: %s",
+  "iridium.overlay.randomTicksSkipped": "Random ticks pulados: %s",
+  "iridium.overlay.itemMergesThrottled": "Merges de itens em throttle: %s",
+  "iridium.overlay.villagersThrottled": "IAs de villager em throttle: %s",
+  "iridium.overlay.fireSpreadThrottled": "Propagação de fogo em throttle: %s",
+  "iridium.overlay.projectilesThrottled": "Projéteis em throttle: %s",
+  "iridium.overlay.explosionRaysCached": "Raios de explosão em cache: %s",
+
+  "iridium.keybind.category": "Iridium",
+  "iridium.keybind.overlay": "Alternar Overlay de Debug",
+  "iridium.keybind.toggleEntityCulling": "Alternar Culling de Entidades",
+  "iridium.keybind.toggleParticleCulling": "Alternar Culling de Partículas",
+  "iridium.keybind.toggleDynamicFps": "Alternar FPS Dinâmico",
+
+  "iridium.toggle.on": "Iridium: %s ativado",
+  "iridium.toggle.off": "Iridium: %s desativado",
+  "iridium.toggle.entityCulling": "Culling de Entidades",
+  "iridium.toggle.particleCulling": "Culling de Partículas",
+  "iridium.toggle.dynamicFps": "FPS Dinâmico",
+
+  "iridium.command.reload.success": "Configuração do Iridium recarregada.",
+  "iridium.command.reload.failure": "Falha ao recarregar a configuração do Iridium. Ver log do servidor."
+}
