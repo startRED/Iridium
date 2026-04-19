@@ -76,11 +76,11 @@ Iridium never reduces visual quality to gain FPS. **No distance-based culling, n
 
 Iridium 0.1.0 targets Minecraft 1.21.1 only. Beyond that, here's the direction for future versions — directions, not dated promises:
 
-- **Newer Minecraft versions.** Once 0.1.0 stabilizes, Iridium will expand to currently supported long-lived Minecraft releases (starting with 1.21.4, the Winter Drop) using [Stonecutter](https://stonecutter.kikugie.dev/) so a single source tree can produce builds for multiple MC versions. Short-lived minors (1.21.2 / 1.21.3) will likely be skipped.
+- **Broader Minecraft version support.** Once 0.1.0 stabilizes, Iridium will expand to the most popular long-lived Minecraft releases using [Stonecutter](https://stonecutter.kikugie.dev/) so a single source tree can produce builds for multiple MC versions. Planned targets: **1.21.4** (Winter Drop) first as a pilot, then **1.20.1** (the version still dominant in large modpack ecosystems like Create and Cobblemon). Short-lived minors (1.21.2 / 1.21.3) will likely be skipped.
 - **New optimization gaps.** Features are added based on measured wins, not hype. The design philosophy stays the same: fill specific gaps left by Sodium and Lithium, never reduce visual quality to gain FPS. Community suggestions via [GitHub issues](https://github.com/startRED/Iridium/issues) are welcome.
 - **What will not change.** No network calls, no telemetry, no shading, no distance-based culling, no adaptive quality tricks. These are enforced by design, not toggles you have to turn off.
 
-Older Minecraft versions (1.20.x and earlier) are **not planned** — the older Fabric API ecosystem and Java 17 would require a separate maintenance track that the expected gains don't justify.
+Versions older than 1.20.1 are not planned — maintenance cost beyond three supported releases grows faster than the expected benefit.
 
 ---
 
