@@ -112,6 +112,14 @@ No network calls, no telemetry, no shading.
 
 ---
 
+## Modpack Policy
+
+You are completely free to include Iridium in any modpack — public or private, free or paid. **No credit or permission required.**
+
+The only thing the PolyForm Shield license does not allow is repackaging Iridium's source code into a competing optimization mod. Normal modpack usage is always fine.
+
+---
+
 ## Installation
 
 1. Install [Fabric Loader](https://fabricmc.net/use/installer/) 0.15.11+ for Minecraft 1.21.1.
