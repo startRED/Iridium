@@ -5,7 +5,7 @@
 <h1 align="center">Iridium</h1>
 
 <p align="center">
-  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-LGPL--3.0--or--later-blue"></a>
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-PolyForm--Shield--1.0.0-blue"></a>
   <img alt="Minecraft" src="https://img.shields.io/badge/Minecraft-1.21.1-green">
   <img alt="Loader" src="https://img.shields.io/badge/loader-Fabric-orange">
   <img alt="Java" src="https://img.shields.io/badge/Java-21-red">
@@ -136,4 +136,4 @@ The built JAR lands in `build/libs/`.
 
 ## License
 
-Released under the [GNU Lesser General Public License v3.0 or later](LICENSE) (LGPL-3.0-or-later). The LGPL-3.0 text incorporates the terms of the [GNU GPL v3.0](LICENSE.GPL) by reference.
+Released under the [PolyForm Shield License 1.0.0](LICENSE). This is a source-available license that permits use, modification, distribution, and contribution for any purpose except commercial exploitation as a competing product. Same license used by Sodium.
