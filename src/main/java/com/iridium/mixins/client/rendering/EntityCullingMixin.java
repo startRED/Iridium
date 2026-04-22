@@ -1,5 +1,6 @@
 package com.iridium.mixins.client.rendering;
 
+import com.iridium.compatibility.ExternalModDetector;
 import com.iridium.config.IridiumConfig;
 import com.iridium.helpers.CullingHelper;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -24,6 +25,10 @@ public abstract class EntityCullingMixin {
             return;
         }
         if (!IridiumConfig.get().entityCullingEnabled) {
+            return;
+        }
+        // EntityCulling (tr7zw) cobre o mesmo callsite com raycasting async — evita double-gate.
+        if (ExternalModDetector.isEntityCullingLoaded()) {
             return;
         }
         if (entity.noCulling) {

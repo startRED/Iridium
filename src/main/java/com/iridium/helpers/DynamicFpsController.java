@@ -1,5 +1,6 @@
 package com.iridium.helpers;
 
+import com.iridium.compatibility.ExternalModDetector;
 import com.iridium.config.IridiumConfig;
 import com.mojang.blaze3d.platform.Window;
 import net.fabricmc.api.EnvType;
@@ -19,6 +20,11 @@ public final class DynamicFpsController {
 
     public static void install() {
         if (installed) {
+            return;
+        }
+        // Dynamic FPS (juliand665) cobre throttle de janela com melhor granularidade — nao instalar se presente.
+        if (ExternalModDetector.isDynamicFpsLoaded()) {
+            installed = true;
             return;
         }
         installed = true;

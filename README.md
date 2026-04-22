@@ -13,7 +13,7 @@
 
 A Fabric optimization mod for Minecraft 1.21.1 that **complements Sodium and Lithium** by filling the gaps they don't cover: entity, particle and block-entity culling, animation culling, dynamic FPS, nametag caching, hopper throttling, explosion ray caching, random-tick throttling, and more.
 
-> **Iridium is not a Sodium replacement.** It is designed to run *alongside* Sodium and Lithium. Rendering mixins that would conflict with Sodium auto-disable at load time, so features stay additive.
+> **Iridium is not a Sodium replacement.** It is designed to run *alongside* Sodium and Lithium. Conflicting mixins are detected and auto-disabled at load time — this covers Sodium as well as other popular optimization mods (EntityCulling, MoreCulling, ImmediatelyFast, Dynamic FPS), so Iridium always stays additive and never duplicates work.
 
 ---
 
@@ -103,6 +103,10 @@ Works on both client and dedicated server. Client features no-op on dedicated se
 |------------------|---------------------------------------------------------------------------|
 | **Sodium** 0.6.x | ✅ Conflicting rendering mixins auto-disable; all other features stay on. |
 | **Lithium**      | ✅ No conflicts. Iridium covers gaps Lithium doesn't (hopper, villager AI, fire, projectiles). |
+| **EntityCulling** (tr7zw) | ✅ Entity and block-entity culling auto-yield. No double-culling overhead. |
+| **MoreCulling**  | ✅ Beacon beam culling auto-yields.                                       |
+| **ImmediatelyFast** | ✅ Map texture cache auto-yields.                                      |
+| **Dynamic FPS** (juliand665) | ✅ Dynamic FPS feature auto-yields to prevent duplicate frame throttling. |
 | **Starlight**    | ✅ No conflicts.                                                          |
 | **FerriteCore**  | ✅ No conflicts.                                                          |
 | **ModernFix**    | ✅ No conflicts.                                                          |

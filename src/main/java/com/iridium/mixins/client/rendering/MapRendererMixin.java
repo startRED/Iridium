@@ -1,5 +1,6 @@
 package com.iridium.mixins.client.rendering;
 
+import com.iridium.compatibility.ExternalModDetector;
 import com.iridium.config.IridiumConfig;
 import com.iridium.helpers.MapTextureCache;
 import net.minecraft.client.gui.MapRenderer;
@@ -19,6 +20,10 @@ public abstract class MapRendererMixin {
             return;
         }
         if (!IridiumConfig.get().mapTextureCacheEnabled) {
+            return;
+        }
+        // ImmediatelyFast otimiza MapRenderer#update nativamente — cede autoridade para evitar double-work.
+        if (ExternalModDetector.isImmediatelyFastLoaded()) {
             return;
         }
         if (MapTextureCache.matchesAndUpdate(mapId, data)) {

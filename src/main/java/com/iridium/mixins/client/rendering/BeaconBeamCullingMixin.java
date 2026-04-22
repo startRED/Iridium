@@ -1,5 +1,6 @@
 package com.iridium.mixins.client.rendering;
 
+import com.iridium.compatibility.ExternalModDetector;
 import com.iridium.config.IridiumConfig;
 import com.iridium.helpers.CullingHelper;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -26,6 +27,10 @@ public abstract class BeaconBeamCullingMixin {
             return;
         }
         if (!IridiumConfig.get().beaconBeamCullingEnabled) {
+            return;
+        }
+        // MoreCulling cobre beacon beam culling nativamente — evita double-gate.
+        if (ExternalModDetector.isMoreCullingLoaded()) {
             return;
         }
         BlockPos pos = blockEntity.getBlockPos();

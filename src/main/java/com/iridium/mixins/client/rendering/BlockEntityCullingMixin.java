@@ -1,5 +1,6 @@
 package com.iridium.mixins.client.rendering;
 
+import com.iridium.compatibility.ExternalModDetector;
 import com.iridium.config.IridiumConfig;
 import com.iridium.helpers.CullingHelper;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -31,6 +32,10 @@ public abstract class BlockEntityCullingMixin {
             return;
         }
         if (!IridiumConfig.get().blockEntityCullingEnabled) {
+            return;
+        }
+        // EntityCulling (tr7zw) tambem cobre BlockEntityRenderDispatcher — evita double-gate.
+        if (ExternalModDetector.isEntityCullingLoaded()) {
             return;
         }
         BlockEntityRenderer<E> renderer = this.getRenderer(blockEntity);
